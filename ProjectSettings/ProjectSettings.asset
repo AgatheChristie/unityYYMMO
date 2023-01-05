@@ -622,7 +622,10 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: STAT_TD;HOTFIX_ENABLE
+    Standalone: STAT_TD;HOTFIX_ENABLE
+    iPhone: STAT_TD;HOTFIX_ENABLE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

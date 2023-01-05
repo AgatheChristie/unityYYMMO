@@ -1,0 +1,58 @@
+Common: ResourcesMgr GlobalInit SceneMgr Stat
+      Core:放了一些Excel转表需要的工具
+	
+
+
+Core:SocketDispatcher  UIDispatcher 单例基类   UISceneViewBase UIWindowViewBase UIViewBase 
+
+
+Data: 协议和Excel转表以后的数据
+
+
+SceneCtrl:场上的一些空物体 SelectRoleSceneCtrl SceneLoadingCtrl
+
+
+UI: UISceneCtrl UIViewMgr UIViewUtil
+    SceneUICtrl:老的文件夹里面还剩UISceneLoadingCtrl
+    UIView:放了一些Excel转表需要的工具
+         UIScene:挂在大预制体(比如UI_Root_LogOn UI_Root_SelectRole)身上的脚本 放在这里
+         UIWindow:挂在小预制体(比如pan_GameServerEnter pan_LogOn)身上的脚本 放在这里
+
+
+System: AccountCtrl GameServerCtrl
+
+Utils: 一些工具类  比如获取时间戳 随机名字之类的
+
+
+
+
+
+
+
+AccountCtrl  m_LogOnView 可以控制 pan_LogOn 窗口上面的 m_LogOnView.txtUserName.text 拿到 pan_LogOn 身上的 UILogOnView 组件(脚本)
+AccountCtrl   拿到 pan_Reg  身上的 UIRegView  组件(脚本)
+监听点击事件 
+
+
+
+
+GameServerCtrl   拿到 pan_GameServerSelect 身上的 UIGameServerSelectView 组件(脚本)
+GameServerCtrl   拿到 pan_GameServerEnter  身上的 UIGameServerEnterView  组件(脚本)
+
+对两个预制体进行操作比如设置UI或者监听点击事件等  
+注意监听的传递，从最底层的GamaServerItem按钮一直传递到最上层的GameServerCtrl
+
+
+场上的SelectRoleSceneCtrl物体   拿到  UI_Root_SelectRole 身上的 UISceneSelectRoleView 组件(脚本)
+
+场上的SelectRoleSceneCtrl物体   监听TCP协议 监听4个按钮的点击事件 监听拖拽  监听职业选择
+
+
+m_UISceneSelectRoleView   
+
+
+
+
+
+
+

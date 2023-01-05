@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Scene_Init.unity
+    guid: 761927737e8cf864a82f381247439aef
+  - enabled: 1
+    path: Assets/Scenes/Scene_LogOn.unity
+    guid: 8e2d7464c790b8046a574573234d4ac6
+  - enabled: 1
+    path: Assets/Scenes/GameScene_CunZhuang.unity
+    guid: eec2c474398c81541af49764fa433b92
+  - enabled: 1
+    path: Assets/Scenes/Scene_Loading.unity
+    guid: c9daf74141fe2d14297c684040d2880f
+  - enabled: 1
+    path: Assets/Scenes/Scene_SelectRole.unity
+    guid: 8753a4a0d4973264c825aa8b74ebb1ae
   m_configObjects: {}
